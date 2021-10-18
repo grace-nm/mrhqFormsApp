@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project Evalaution Form Level Five</title>
+    <style>
+        body{
+            text-align: center; font-size: 20px; font-family:  Ubuntu;
+            background-color: gainsboro;
+        }
+        input, button{
+            border:none; padding: 10px 20px; font-weight: bold; font-size: 20px; border-radius: 7px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h2><legend>Final Project Evalaution Form Level Five <br></legend></h2>
+        <form action="/finalProjectEvaluationLevelFive" method="POST">
+            <p>You are requested to complete this evaluation form before your final presentation of Mission X.  Failing to complete and submit this form will impact your programme completion.</p>
+            <br>
+            <label for="fname">Your Name: <br>
+                <input type="text" name="fname" id="fname" placeholder="Full Name" required autocomplete="Full Name">
+            </label> <br><br>
+    
+            <label for="questionOne"> 1. What Agile Mindsets and Practices did you use to complete this Mission?  Why did you choose these Mindsets Practices?  How did you apply them? You must explain your application two <br>(2) mindset and one (1) practice. You must also provide evidence you have applied these (e.g. Trello cards, Kanban board, journal, sprint plan, burndown chart, etc).
+                <input type="text" name="questionOne" id="questionOne" placeholder="" required autocomplete="questionOne">
+            </label> <br><br>
+            
+            <label for="questionTwo">2. How did you apply Design Thinking practices to this Mission? Describe which parts of the Design Thinking process you used and explain how these impacted on <br> your decision making. You must also provide evidence you have applied these (e.g. journal, prototype assessment, testing plan etc).
+                <input type="text" name="questionTwo" id="questionTwo" placeholder="" required autocomplete="questionTwo">
+            </label> <br><br>
+
+            <label for="questionThree">3. What industry standard tools or best practices did you use to solve problems which arose at any stage during the project? Explain the problem, how you used these practices to help you solve problems, and why this is relevant <br> in your chosen professional pathway. You must describe at least two (2) tools or practices. These must be different from those described in question 1.<br>
+                <input type="text" name="questionThree" id="questionThree" placeholder="" required autocomplete="questionThree">
+            </label> <br><br>
+
+            <label for="questionFour">4. Analyse how your solution meets the requirements of the client’s business problem. <br> How does your solution meet the requirements, how have you measured whether you are successful, and what are the limitations of your solution?<br>
+                <input type="text" name="questionFour" id="questionFour" placeholder="explain.." required autocomplete="questionFour">
+            </label> <br><br>
+     
+            <button style="background-color: white">Submit</button>
+        </form>
+</body>
+</html>
+

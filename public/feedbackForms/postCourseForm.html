@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Post Course Completion Feedback</title>
+    <style>
+        body{
+            text-align: center; font-size: 20px; font-family:  Ubuntu;
+            background-color: grey;
+        }
+        input, button{
+            border:none; padding: 10px 20px; font-weight: bold; font-size: 20px; border-radius: 7px; text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>MISSION READY HQ <br> post course Completion FeedBack</u></h1>
+
+        <legend>Post Course FeedBack</legend>
+        <form action="/postCourse" method="POST">
+            <label for="fname">
+                <input type="text" name="fname" id="fname" placeholder="Full Name" required autocomplete="Full Name">
+            </label> <br><br>
+    
+            <label for="accelerator">
+                <input type="text" name="accelerator" id="accelerator" placeholder="accelerator : (year and course name)" required autocomplete="accelerator">
+            </label> <br><br>
+
+            <label for="threeEnjoy">
+                <input type="text" name="threeEnjoy" id="threeEnjoy" placeholder="Share upto 3 aspects you absolutely enjoyed about your MRHQ experience" required autocomplete="threeEnjoy">
+            </label> <br><br>
+         
+            <label for="threeImprove">
+                <input type="text" name="threeImprove" id="threeImprove" placeholder="Share upto 3 aspects of your MRHQ experience that you would like to see improved" required autocomplete="threeImprove">
+            </label> <br><br>
+
+            <label for="quali"> on a scale of 1 to 5, rate your overall experience with your project sponser:
+                <input type="radio" name="quali" id="quali" class="qualic" value="one">one
+                <input type="radio" name="quali" id="quali" class="qualic" value="two">two
+                <input type="radio" name="quali" id="quali" class="qualic" value="three">three
+                <input type="radio" name="quali" id="quali" class="qualic" value="four">four
+                <input type="radio" name="quali" id="quali" class="qualic" value="five">five
+            </label> <br><br>
+
+            <label for="explain1">Explain why you give the above rating?:
+                <input type="text" name="explain1" id="explain1" placeholder="explain.." required autocomplete="explain">
+            </label> <br><br>
+
+            <label for="supportGuide">On a scale of 1-5, rate the support and guidance from MRHQ mentors that you have recieved during your project experience:
+                <input type="radio" name="supportGuide" id="supportGuide" value="one">one
+                <input type="radio" name="supportGuide" id="supportGuide" value="two">two
+                <input type="radio" name="supportGuide" id="supportGuide" value="three">three
+                <input type="radio" name="supportGuide" id="supportGuide" value="four">four
+                <input type="radio" name="supportGuide" id="supportGuide" value="five">five
+            </label> <br><br>
+
+            
+            <label for="tellUs">Explain why you give the above rating?:
+                <input type="text" name="tellUs" id="tellUs" placeholder="tell us.." required autocomplete="tellUS">
+            </label> <br><br>
+
+            <label for="additionalComments">Any additional Comments?:
+                <input type="text" name="additionalComments" id="additionalComments" placeholder="tell us.." required autocomplete="tellUS">
+            </label> <br><br>
+
+            <!-- <label for="city">
+                <input list="cy" name='city' placeholder="City">
+                <datalist id="cy">
+                    <option value="Adipur"></option>
+                    <option value="Anjar"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </label> <br><br> -->
+<!--
+            <label for="dob">
+                <input type="date" name="dob" id="dob" placeholder="">
+            </label> <br><br> -->
+     
+            <button style="background-color: black">Submit</button>
+        </form>
+<!-- <script src="../routes/student.js"></script> -->
+</body>
+</html>

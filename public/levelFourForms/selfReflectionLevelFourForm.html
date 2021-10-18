@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Self Reflection Form Level Four</title>
+    <style>
+        body{
+            text-align: center; font-size: 20px; font-family:  Ubuntu;
+            background-color: gainsboro;
+        }
+        input, button{
+            border:none; padding: 10px 20px; font-weight: bold; font-size: 20px; border-radius: 7px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+        <h2><legend>Self Reflection Form <br></legend></h2>
+        <form action="/selfReflectionLevelFour" method="POST">
+            <p>Using the prompting questions below, reflect on your knowledge and skill development during the Mission.</p>
+            <br>
+            <label for="fname">Your Name: <br>
+                <input type="text" name="fname" id="fname" placeholder="Full Name" required autocomplete="Full Name">
+            </label> <br><br>
+    
+            <label for="responsible">What work were you responsible for completing for this Mission?  Name the screens that you developed, specify whether it is only front end or full stack. <br>
+                <input type="text" name="responsible" id="responsible" placeholder="Share upto 3 aspects you absolutely enjoyed about your MRHQ experience" required autocomplete="resposible">
+            </label> <br><br>
+
+            
+            <label for="experience">Describe what the Mission experience was like for you.<br>
+                <input type="text" name="experience" id="experience" placeholder=" experience..." required autocomplete="experience">
+            </label> <br><br>
+
+         
+            <label for="learn">What did you learn? <br>
+                <input type="text" name="learn" id="learn" placeholder="Learn.." required autocomplete="learn">
+            </label> <br><br>
+
+            <label for="well">What went well? <br>
+                <input type="text" name="well" id="well" placeholder="what went well.." required autocomplete="well">
+            </label> <br><br>
+
+                    
+            <label for="challenge">What was challenging? <br>
+                <input type="text" name="challenge" id="challenge" placeholder="challenge.." required autocomplete="challenge">
+            </label> <br><br>
+
+            <label for="improve">What areas of your own skills/knowledge do you plan to improve on? (Please include on technical area and one non-technical area) <br>
+                <input type="text" name="improve" id="improve" placeholder="improve..." required autocomplete="improve">
+            </label> <br><br>
+
+            <!-- <label for="city">
+                <input list="cy" name='city' placeholder="City">
+                <datalist id="cy">
+                    <option value="Adipur"></option>
+                    <option value="Anjar"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </label> <br><br> -->
+<!--
+            <label for="dob">
+                <input type="date" name="dob" id="dob" placeholder="">
+            </label> <br><br> -->
+     
+            <button style="background-color: white">Submit</button>
+        </form>
+<!-- <script src="../routes/student.js"></script> -->
+</body>
+</html>

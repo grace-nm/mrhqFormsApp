@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+margin: 0px;}
+
+/* Style the tab */
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+}
+#marking{
+padding: 10px;
+background-color: gray;
+width: 35%;
+}
+#rubric{
+padding: 10px;
+background-color: darkgrey;
+width: 65%;
+overflow: auto;
+}
+
+#container{
+    background-color: green;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#heading{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="rubric">
+  <h3 id="heading" style="background-color: white;">LEVEL 5 MISSION 6 MARKING RUBRICS (FINAL MISSION FOR L5)</h3>
+    <table style="width:100%">
+        <tr>
+          <th>Component</th>
+          <th>Competency Statement</th> 
+          <th>Evidence you will provide</th>
+        </tr>
+        <tr>
+            <TH colspan="5" scope="colgroup">1. Apply agile software delivery and design thinking practices to contribute to the creation of digital technology products in the context of practice   </TH>
+        </tr>
+        <tr>
+          <td>Apply Agile mindset or practices</td>
+          <td>Demonstrated application of at least two (2) Agile mindsets. Agile mindsets include: people-focus, value-driven, collaborative, and adaptive.
+            Demonstrated application of at least one (1) Agile practice. Agile practices include; kanban, scrum, regular standup, iterative development, sprint planning, or estimation.
+            Has accurately described two (2) mindsets and one (1) practice, and also described how they have applied them to this Mission. 
+            Identified which output documents they have applied mindset(s) and practice to, and the submitted output documents support this.
+          </td>
+          <td>Project Evaluation Form
+            Outputs from Tasks (documents or products)
+            Evidence of application (e.g. use of Trello cards, Kanban board, 
+            sprint plan, product backlog, burn down chart, etc)
+          </td>
+        </tr>
+        <tr>
+          <td>
+          Apply Design Thinking practices
+          </td>
+          <td>
+            Demonstrated application to the digital solution of at least one 
+            (1) part of the design thinking process (empathize, define, ideate, prototype, test)
+            Described at least one (1) part of the Design Thinking process they used and 
+            explained how this impacted on their decision making in the Mission. Identified which output 
+            documents they have applied Design Thinking to, and the submitted output documents support this.	
+          </td>
+          <td>           
+            Project Evaluation Form
+            Output documents from Tasks 
+            Evidence of application (e.g. use of journal, 
+            prototype assessment, testing plan, etc)</td>
+        </tr>
+
+<!-- hello this is repeating the table -->
+        <tr>
+            <TH colspan="5" scope="colgroup">2. Apply industry standard best practices to contribute to the creation of a digital technology product solution in the context of practice</TH>
+        </tr>
+        <tr>
+          <td>
+            Apply industry standard best practices to solve problems 
+          </td>
+          <td>
+            Demonstrated application of at least two (2) industry tools or practices to create the solution.
+            Tools or practices must be relevant and appropriate to the solution and the learner’s professional pathway.
+            These include, but are not limited to: empathising methods, prototype and testing methods, user flow modelling, 
+            business process modelling, data manipulation and modelling, UML, BPMN, Cloud programming, AI programming, DevOps. 
+            Identified at least two (2) industry tools or practices which they used to solve problems during the Mission. 
+            Explained the problem and how these practices or tools were used to solve problems. 
+          </td>
+          <td>
+            Project Evaluation Form
+            Outputs from Tasks (documents or products)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Contribute to delivery of quality solutions 
+          </td>
+            <td>
+              The proposed solution is fit for purpose to solve the business problem 
+              specified in the Mission. For example, when asked to design a solution to speed up a process, 
+              the proposed solution will need to enable the process to be completed in shorter time.
+              Solution is analysed or tested against success criteria to 
+              identify strengths and limitations and/or bugs. 	
+            </td>	
+            <td>
+              Project Evaluation Form
+              Outputs from Tasks (documents or products)
+              Source Control / GitHub
+            </td>
+        </tr>
+        <!-- hello this is repeating the table -->
+        <tr>
+            <TH colspan="5" scope="colgroup">3. Apply effective interpersonal and collaborative skills when working on a project with internal and external stakeholders </TH>
+        </tr>
+        <tr>
+          <td>
+            Effective communication 
+          </td>
+          <td>
+            Oral and written communications are logical and easy to follow. 
+            Demonstrate appropriate use of words, diagrams or props to enhance explanations.  
+          </td>
+          <td>
+            Project Evaluation Form
+            Presentation
+          </td>
+        </tr>
+        <tr>
+          <td>Effective collaboration</td>
+          <td>
+             	Regularly attended and contributed to team meetings, maintained regular communications with the team. 
+              Respectfully interacted with and demonstrated clear intent to understand others.
+              Contributed ideas, and a fair share, to a team project.
+              Provided feedback to their team member(s).
+          </td>
+          <td>	
+            Peer evaluation (Teamwork)
+            Assessor evaluation (Teamwork)
+            Developers: Source Control / GitHub
+          </td>
+        </tr>
+        <!-- end of repetaed table -->
+      </table>
+</div>
+<div id="marking">
+<h2>Marking</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+  <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'StudentOne')">Student 1</button>
+  <button class="tablinks" onclick="openTab(event, 'StudentTwo')">Student 2</button>
+  <button class="tablinks" onclick="openTab(event, 'StudentThree')">Student 3 </button>
+  <button class="tablinks" onclick="openTab(event, 'StudentFour')">Student 4 </button>
+  <button class="tablinks" onclick="openTab(event, 'StudentFive')">Student 5 </button>
+  <button class="tablinks" onclick="openTab(event, 'StudentSix')">Student 6 </button>
+
+  </div>
+
+  <!-- confusing hot mess awaits... -->
+<form action="/markingRubricsLevelFive" method="POST">
+  <div id="StudentOne" class="tabcontent">
+    <h3>Student 1</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student1name" id="student1name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student1criteria1" id="student1criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria1" id="student1criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student1criteria2" id="student1criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria2" id="student1criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student1comment1" id="student1comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student1criteria3" id="student1criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria3" id="student1criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student1criteria4" id="student1criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria4" id="student1criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student1comment2" id="student1comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student1criteria5" id="student1criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria5" id="student1criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student1criteria6" id="student1criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student1criteria6" id="student1criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student1comment3" id="student1comment3"></input><br><br>
+ </div>
+
+<div id="StudentTwo" class="tabcontent">
+  <h3>Student 2</h3>
+  <p>Comment evidence per each section.</p>
+  Students Name <input type="text" name="student2name" id="student2name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student2criteria1" id="student2criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria1" id="student2criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student2criteria2" id="student2criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria2" id="student2criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student2comment1" id="student2comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student2criteria3" id="student2criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria3" id="student2criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student2criteria4" id="student2criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria4" id="student2criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student2comment2" id="student2comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student2criteria5" id="student2criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria5" id="student2criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student2criteria6" id="student2criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student2criteria6" id="student2criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student2comment3" id="student2comment3"></input><br><br>
+  <input type="button" value="copy from person 1" onclick="copyContents(2)"></input>
+</div>
+
+<div id="StudentThree" class="tabcontent">
+  <h3>Student 3</h3>
+  <p>Comment evidence per each section.</p>
+  Students Name <input type="text" name="student3name" id="student3name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student3criteria1" id="student3criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria1" id="student3criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student3criteria2" id="student3criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria2" id="student3criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student3comment1" id="student3comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student3criteria3" id="student3criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria3" id="student3criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student3criteria4" id="student3criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria4" id="student3criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student3comment2" id="student3comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student3criteria5" id="student3criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria5" id="student3criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student3criteria6" id="student3criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student3criteria6" id="student3criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student3comment3" id="student3comment3"></input><br><br>
+  <input type="button" value="copy from person 1" onclick="copyContents(3)"></input>
+</div>
+
+<div id="StudentFour" class="tabcontent">
+  <h3>Student 4</h3>
+  <p>Comment evidence per each section.</p>
+  Students Name <input type="text" name="student4name" id="student4name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student4criteria1" id="student4criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria1" id="student4criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student4criteria2" id="student4criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria2" id="student4criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student4comment1" id="student4comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student4criteria3" id="student4criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria3" id="student4criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student4criteria4" id="student4criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria4" id="student4criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student4comment2" id="student4comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student4criteria5" id="student4criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria5" id="student4criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student4criteria6" id="student4criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student4criteria6" id="student4criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student4comment3" id="student4comment3"></input><br><br>
+  <input type="button" value="copy from person 1" onclick="copyContents(4)"></input>
+</div>
+
+
+<div id="StudentFive" class="tabcontent">
+  <h3>Student 5</h3>
+  <p>Comment evidence per each section.</p>
+  Students Name <input type="text" name="student5name" id="student5name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student5criteria1" id="student5criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria1" id="student5criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student5criteria2" id="student5criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria2" id="student5criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student5comment1" id="student5comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student5criteria3" id="student5criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria3" id="student5criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student5criteria4" id="student5criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria4" id="student5criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student5comment2" id="student5comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student5criteria5" id="student5criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria5" id="student5criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student5criteria6" id="student5criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student5criteria6" id="student5criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student5comment3" id="student5comment3"></input><br><br>
+  <input type="button" value="copy from person 1" onclick="copyContents(5)"></input>
+</div>
+
+
+<div id="StudentSix" class="tabcontent">
+  <h3>Student 6</h3>
+  <p>Comment evidence per each section.</p>
+  Students Name <input type="text" name="student6name" id="student6name" placeholer="NAME"><br><br>
+    <!-- radio button for comment one -->
+    <label><b>criteria1</b></label>
+    competent<input type="radio" name="student6criteria1" id="student6criteria1competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria1" id="student6criteria1incompetent" value="0"></input><br>
+    <label><b>criteria2</b></label>
+    competent<input type="radio" name="student6criteria2" id="student6criteria2competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria2" id="student6criteria2incompetent" value="0"></input><br>
+    <!-- comment one -->
+    Comment One <input type="text" name="student6comment1" id="student6comment1"></input><br><br>
+ <!-- radio button for comment two -->
+    <label><b>criteria3</b></label>
+    competent<input type="radio" name="student6criteria3" id="student6criteria3competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria3" id="student6criteria3incompetent" value="0"></input><br>
+    <label><b>criteria4</b></label>
+    competent<input type="radio" name="student6criteria4" id="student6criteria4competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria4" id="student6criteria4incompetent" value="0"></input><br>
+    Comment Two <input type="text" name="student6comment2" id="student6comment2"></input><br><br>
+    <!-- radio button for comment three -->
+    <label><b>criteria5</b></label>
+    competent<input type="radio" name="student6criteria5" id="student6criteria5competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria5" id="student6criteria5incompetent" value="0"></input><br>
+    <label><b>criteria6</b></label>
+    competent<input type="radio" name="student6criteria6" id="student6criteria6competent" value="1"></input>
+    incompetent<input type="radio" name="student6criteria6" id="student6criteria6incompetent" value="0"></input><br>
+    Comment Three <input type="text" name="student6comment3" id="student6comment3"></input><br><br>
+  <input type="button" value="copy from person 1" onclick="copyContents(6)"></input>
+</div>
+
+<!-- end of that hot mess -->
+<input type="submit" value="submit for all team members"></input>
+</form>
+</div> <!--closes the marking div-->
+</div> <!--closes the marking div-->
+<!-- javascript stuff below: -->
+<script>
+function openTab(evt, tabName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(tabName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+function copyContents(personNum) {
+  for (let i=1; i<4; i++) {
+    document.getElementById("student" + personNum + "comment" + i).value = document.getElementById("student1comment" + i).value;
+  }
+  for (let i=1; i<7; i++) {
+    document.getElementById("student" + personNum + "criteria" + i + "competent").checked = document.getElementById("student1criteria" + i + "competent").checked;
+    document.getElementById("student" + personNum + "criteria" + i + "incompetent").checked = document.getElementById("student1criteria" + i + "incompetent").checked;
+  }
+}
+
+</script>
+</body>
+</html>
+
+<!-- <form action="/markingRubricsLevelFive" method="POST">
+  <div id="StudentOne" class="tabcontent">
+      <h3>Student 1</h3>
+      <p>Comment evidence per each section.</p>
+      Students Name <input type="text" name="student1name" id="student1name" placeholer="NAME"><br><br>
+      Comment One <input type="text" name="student1comment1" id="student1comment1"></input><br><br>
+      Comment Two <input type="text" name="student1comment2" id="student1comment2"></input><br><br>
+      Comment Three <input type="text" name="student1comment3" id="student1comment3"></input><br><br>
+  </div>
+  <div id="StudentTwo" class="tabcontent">
+    <h3>Student 2</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student2name" id="student2name" placeholer="NAME"><br><br>
+    Comment One <input type="text" name="student2comment1" id="student2comment1"></input><br><br>
+    Comment Two <input type="text" name="student2comment2" id="student2comment2"></input><br><br>
+    Comment Three <input type="text" name="student2comment3" id="student2comment3"></input><br><br>
+    <input type="button" value="copy from person 1" onclick="copyContents(2)"></input>
+  </div>
+  <div id="StudentThree" class="tabcontent">
+    <h3>Student 3</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student3name" id="student3name" placeholer="NAME"><br><br>
+    Comment One <input type="text" name="student3comment1" id="student3comment1"></input><br><br>
+    Comment Two <input type="text" name="student3comment2" id="student3comment2"></input><br><br>
+    Comment Three <input type="text" name="student3comment3" id="student3comment3"></input><br><br>
+    <input type="button" value="copy from person 1" onclick="copyContents(3)"></input>
+  </div>
+  <div id="StudentFour" class="tabcontent">
+    <h3>Student 4</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student4name" id="student4name" placeholer="NAME"><br><br>
+    Comment One <input type="text" name="student4comment1" id="student4comment1"></input><br><br>
+    Comment Two <input type="text" name="student4comment2" id="student4comment2"></input><br><br>
+    Comment Three <input type="text" name="student4comment3" id="student4comment3"></input><br><br>
+    <input type="button" value="copy from person 1" onclick="copyContents(4)"></input>
+  </div>
+  <div id="StudentFive" class="tabcontent">
+    <h3>Student 5</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student5name" id="student5name" placeholer="NAME"><br><br>
+    Comment One <input type="text" name="student5comment1" id="student5comment1"></input><br><br>
+    Comment Two <input type="text" name="student5comment2" id="student5comment2"></input><br><br>
+    Comment Three <input type="text" name="student5comment3" id="student5comment3"></input><br><br>
+    <input type="button" value="copy from person 1" onclick="copyContents(5)"></input>
+  </div>
+  <div id="StudentSix" class="tabcontent">
+    <h3>Student 6</h3>
+    <p>Comment evidence per each section.</p>
+    Students Name <input type="text" name="student6name" id="student6name" placeholer="NAME"><br><br>
+    Comment One <input type="text" name="student6comment1" id="student6comment1"></input><br><br>
+    Comment Two <input type="text" name="student6comment2" id="student6comment2"></input><br><br>
+    Comment Three <input type="text" name="student6comment3" id="student6comment3"></input><br><br>
+    <input type="button" value="copy from person 1" onclick="copyContents(6)"></input>
+  </div> -->

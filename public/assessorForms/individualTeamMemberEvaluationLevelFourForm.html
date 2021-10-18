@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessor Use Only</title>
+    <style>
+        body{
+            text-align: center; font-size: 20px; font-family:  Ubuntu;
+            background-color: grey;
+                }
+        input, button{
+            border:none; padding: 10px 20px; font-weight: bold; font-size: 20px; border-radius: 7px; text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>MISSION READY HQ</h2>
+        <legend>Assessor Use Only</legend><br>
+        <legend> Individual Team Member Evaluation Form Level Four</legend><br>
+        <form action="/individualAssessorEvaluationLevelFour" method="POST">
+            <label for="fname"> Students Name <br>
+                <input type="text" name="fname" id="fname" placeholder="Students Name" required autocomplete="Full Name">
+            </label> <br><br>
+
+<!-- start of this question block -->
+            <label for="attend"> Did they regularly attend meetings?<br>
+                <input type="radio" name="attend" id="attend" class="attend" value="yes">yes
+                <input type="radio" name="attend" id="attend" class="attend" value="no">no
+            </label> <br><br>
+            <label for="evidenceOne"> Evidence for this judgement (Assessor to provide a description of observed actions, behaviours or other evidence)<br>
+                <input type="text" name="evidenceOne" id="evidenceOne" placeholder="" required autocomplete="evidenceOne">
+            </label> <br><br><br><br>
+<!-- end of this question block -->
+
+<!-- start of this question block -->
+        <label for="deliver"> Did they deliver on their agreed work in time?<br>
+            <input type="radio" name="deliver" id="deliver" class="deliver" value="yes">yes
+            <input type="radio" name="deliver" id="deliver" class="deliver" value="no">no
+        </label> <br><br>
+        <label for="evidenceTwo"> Evidence for this judgement (Assessor to provide a description of observed actions, behaviours or other evidence)<br>
+            <input type="text" name="evidenceTwo" id="evidenceTwo" placeholder="" required autocomplete="evidenceTwo">
+        </label> <br><br><br><br>
+<!-- end of this question block -->
+
+<!-- start of this question block -->
+        <label for="respect"> Did they demonstrate mutual respect for you and others?<br>
+            <input type="radio" name="respect" id="respect" class="respect" value="yes">yes
+            <input type="radio" name="respect" id="respect" class="respect" value="no">no
+        </label> <br><br>
+        <label for="evidenceThree"> Evidence for this judgement (Assessor to provide a description of observed actions, behaviours or other evidence)<br>
+            <input type="text" name="evidenceThree" id="evidenceThree" placeholder="" required autocomplete="evidenceThree">
+        </label> <br><br><br><br>
+<!-- end of this question block -->
+
+<!-- start of this question block -->
+        <label for="communicate"> Did they communicate their ideas clearly with you or the team?<br>
+            <input type="radio" name="communicate" id="communicate" class="communicate" value="yes">yes
+            <input type="radio" name="communicate" id="communicate" class="communicate" value="no">no
+        </label> <br><br>
+        <label for="evidenceFour"> Evidence for this judgement (Assessor to provide a description of observed actions, behaviours or other evidence)<br>
+            <input type="text" name="evidenceFour" id="evidenceFour" placeholder="" required autocomplete="evidenceFour">
+        </label> <br><br><br><br>
+<!-- end of this question block -->
+
+<!-- start of this question block -->
+        <label for="allowExpress"> Did they allow others to express themselves and try to understand?<br>
+            <input type="radio" name="allowExpress" id="allowExpress" class="allowExpress" value="yes">yes
+            <input type="radio" name="allowExpress" id="allowExpress" class="allowExpress" value="no">no
+        </label> <br><br>
+        <label for="evidenceFive"> Evidence for this judgement (Assessor to provide a description of observed actions, behaviours or other evidence)<br>
+            <input type="text" name="evidenceFive" id="evidenceFive" placeholder="" required autocomplete="evidenceFive">
+        </label> <br><br><br><br>
+<!-- end of this question block -->
+
+<label for="comments">Any comments you would like to add: <br>
+    <input type="text" name="comments" id="comments" placeholder="" required autocomplete="comments">
+</label> <br><br><br><br>
+            <!-- <label for="city">
+                <input list="cy" name='city' placeholder="City">
+                <datalist id="cy">
+                    <option value="Adipur"></option>
+                    <option value="Anjar"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </label> <br><br> -->
+<!--
+            <label for="dob">
+                <input type="date" name="dob" id="dob" placeholder="">
+            </label> <br><br> -->
+     
+            <button style="background-color: orange">Submit</button>
+        </form>
+<!-- <script src="../routes/student.js"></script> -->
+</body>
+</html>

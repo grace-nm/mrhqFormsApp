@@ -18,6 +18,10 @@ a{
      background-color: rgb(63, 63, 63);
      display: flex;
      height: 6%;
+     shadow: 0 0 3px #f7d4d4, 0 0 5px #0000FF;
+     margin-bottom: 2px;
+     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
 }
 
 #compMan{
@@ -60,7 +64,8 @@ padding: 0px;
 align-items: center;
 justify-content: center;
 text-align: center;
-/* height: 300px; Should be removed. Only for demonstration */
+/* height: 300px;  */
+/* Should be removed. Only for demonstration */
 position: relative;
 text-align: center;
 color: white;
